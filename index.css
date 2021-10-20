@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #d4e1ff;
+}
+
+div,
+header,
+nav,
+section {
+  border: 0px solid #000;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+}
+
+.container #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0;
+}
+
+.container #header .header-nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.container #header .header-nav h1 {
+  color: #060535;
+  font-size: 2.2rem;
+}
+
+.container #header .header-nav h1 #header-img {
+  color: #060535;
+  margin-right: 10px;
+}
+
+.container #header .header-nav ul li a {
+  color: #060535;
+}
+
+.container #header .header-nav ul li a:hover {
+  color: #060535;
+}
+
+.container section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container section .email p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.container section .email input[type="email"] {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.container section .email input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  padding: 5px;
+  background-color: #060535;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #060535;
+}
+
+.container section .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.container section .product-info .product-img {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.container section .product-info .product-img svg {
+  color: #060535;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container section .product-info .product-text {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.container section .product-info .product-text h1 {
+  font-size: 1.8rem;
+}
+
+.container section .product-video {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container section .product-video iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.container section .product-pricing-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.container section .product-pricing-info .product-pricing {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin-left: 30px;
+  margin-top: 100px;
+  border: 1px solid #060535;
+  border-radius: 5px;
+}
+
+.container section .product-pricing-info .product-pricing h4,
+.container section .product-pricing-info .product-pricing p {
+  text-align: center;
+}
+
+.container section .product-pricing-info .product-pricing h4 {
+  margin-top: 30px;
+}
+
+.container section .product-pricing-info .product-pricing p {
+  font-weight: medium;
+  margin-top: -10px;
+}
+
+.container section .product-pricing-info .product-pricing button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #060535;
+  border: 1px solid #060535;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.container section .product-pricing-info .product-pricing button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container section .product-pricing-info .product-pricing button a:hover {
+  color: #fff;
+}
+
+.container section .product-pricing-info .product-pricing span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.container section .product-pricing-info .product-pricing .product-pricing-header {
+  width: 100%;
+  background-color: #060535;
+  min-height: 50px;
+  border: 2px solid #060535;
+}
+
+.container section .product-pricing-info .product-pricing .product-pricing-header h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container #header .header-nav {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container #header .header-nav h1 {
+    text-align: center;
+  }
+  .container #header .header-nav ul {
+    display: block;
+  }
+  .container #header .header-nav ul li {
+    text-align: center;
+  }
+  .container section .email input[type="submit"] {
+    width: 50%;
+  }
+  .container section .product-info {
+    width: 90%;
+  }
+  .container section .product-info .product-img {
+    display: none;
+  }
+  .container section .product-info .product-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container section .product-info .product-text h1,
+  .container section .product-info .product-text p {
+    text-align: center;
+  }
+  .container section .product-info .product-text h1 {
+    margin-top: 30px;
+  }
+  .container section .product-video {
+    width: 90%;
+  }
+  .container section .product-video iframe {
+    width: 100%;
+  }
+  .container section .product-pricing-info .product-pricing {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
